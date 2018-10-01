@@ -1,11 +1,10 @@
-.coin {
-    border: medium none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: top;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-  }
+#conteneur{
+  height: 400px;
+  width:80%;
+  text-align:center;
+  margin: auto;
+}
+img {
+  max-height:100%;
+  max-width:100%;
+}
