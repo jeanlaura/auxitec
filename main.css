@@ -1,9 +1,15 @@
+/*début des styles du carousel */
+
 #boutonprev, #boutonnext {
   top: 50%;
   transform: translateY(-50%);
   bottom: initial;
   opacity: 0.0;
   transition: 0.3s;
+}
+
+#carouselExampleControls {
+  margin-bottom: 5px;
 }
 
 #carouselExampleControls:hover #boutonprev {
@@ -46,12 +52,12 @@
   position: absolute;
   color: #FFF;
   font-size: 4vw;
-  font-weight: lighter;
   top: 50%;
   left: 17%;
   font-family: 'Roboto', sans-serif;
   animation-duration: 0.4s;
   animation-delay: 0.8s;
+  font-weight: lighter;
 }
 
 #titrecarousel2 {
@@ -62,7 +68,7 @@
   top: 50%;
   left: 17%;
   font-family: 'Roboto', sans-serif;
-  width:60vw;
+  width: 60vw;
   text-align:center;
   animation-duration: 0.4s;
   animation-delay: 0.8s;
@@ -70,4 +76,49 @@
 
 #carouselExampleControls{
   background-color: #026eb6;
+}
+
+/*fin des styles css du carousel */
+
+/*début des styles des 3 boutons superposés au carousel*/
+.carrevert {
+  background-color: #6eaa00;
+  color: #FFF;
+  margin-bottom:10px;
+  padding: 50px 80px 50px 80px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 50%;
+}
+
+@media (max-width: 1000px) {
+  .carrevert {
+    position:inherit;
+    margin-left: 0px;
+  }
+}
+
+.imagecarrevert {
+  height: 80px;
+  width: 80px;
+}
+
+.titrecarrevert {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#premierecaseverte {
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+}
+
+#deuxiemecaseverte {
+  animation-duration: 1s;
+  animation-delay: 1.6s;
+}
+
+#troisiemecaseverte {
+  animation-duration: 1s;
+  animation-delay: 2s;
 }
