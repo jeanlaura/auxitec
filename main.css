@@ -4,21 +4,24 @@
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
 }
-
-body {
-  background: url('http://www.auxitec-ingenierie.com/wp-content/uploads/2015/07/fond-page-4.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin-left: 1rem;
-  margin-right: 1rem;
+section, footer, header, aside{
+	display: block;
 }
-
+body {
+  background-color: #ffffff;
+  background-image: url(http://www.auxitec-ingenierie.com/wp-content/uploads/2015/07/fond-page-4.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin-left: 5.1rem;
+  margin-right: 5.1rem;
+  position:relative;
+}
 .main-container{
 	background-color: #FFFFFF;
+	position:relative;
 }
-
 .main-container .footer-distributed{
   border-top-color: #6EAA00;
   font: normal 14px 'Open Sans';
@@ -27,57 +30,48 @@ body {
 	width: 100%;
 	text-align: left;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
 	padding: 55px 50px;
 	padding-top: 80px;
 }
-
 .main-container .footer-distributed .footer-left,
 .main-container .footer-distributed .footer-center,
 .main-container .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
 }
-
 /* Footer left */
 .main-container .footer-distributed .footer-left{
 	width: 30%;
   color: #B8C7D1;
   padding-right: 1rem;
 }
-
 .main-container .footer-distributed .footer-left i{
   margin-right: 0.5rem;
   color: #00A2A9;
 }
-
 #globe i{
   color: #B8C7D1;
 }
-
 .main-container .footer-distributed a{
   color: #00a2a9;
   text-decoration: none;
 }
-
 /* Footer Center */
 .main-container .footer-distributed .footer-center{
 	width: 32%;
 }
-
 /* Titles Footer */
 .main-container .footer-distributed h3{
 	color:#ffffff;
 	margin-top: 0;
   text-transform: uppercase;
 }
-
 .main-container .footer-distributed .footer-center i{
 	color: #B8B9A8;
   margin-right: 0.5rem;
 }
-
 .main-container .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #B8C7D1;
@@ -85,19 +79,15 @@ body {
 	display:block;
 	line-height:2;
 }
-
-/* Footer Rigth */
+/* Footer Right */
 /* Contact form */
-
 #logoFooter {
   width:12rem;
   height:auto;
 }
-
 .main-container .footer-distributed form{
 	display: inline-block;
 }
-
 .main-container .footer-distributed form input,
 .main-container .footer-distributed form textarea{
 	display: block;
@@ -114,31 +104,25 @@ body {
 	width: 350px;
 	padding: 18px;
 }
-
 .main-container .footer-distributed .footer-right ::-webkit-input-placeholder {
 	color: #566869;
 }
-
 .main-container .footer-distributed .footer-right ::-moz-placeholder {
 	color:  #566869;
 	opacity: 1;
 }
-
 .main-container .footer-distributed .footer-right :-ms-input-placeholder{
 	color:  #566869;
 }
-
 .main-container .footer-distributed .footer-right form input{
 	height: 40px;
 	margin-bottom: 5px;
 }
-
 .main-container .footer-distributed .footer-right form textarea{
 	height: 100px;
 	margin-bottom: 5px;
   width: 350px;
 }
-
 .main-container .footer-distributed .footer-right form button{
 	border-radius: 3px;
 	background-color:  #00a2a9;
@@ -153,25 +137,15 @@ body {
 .main-container .footer-distributed .footer-right button:hover {
     background: #333333;
 }
-
-.main-container .footer-fix {
+footer .footer-fix{
     background: #002F4D;
     color: #B8C7D1;
     text-align: center;
     height: 150px;
     width: 100%;
-    /* position: fixed; */
-}
-
-#opteam {
-   margin-top:-5px;
-   margin-left:10px;
-   width:163;
-   height:33;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
-
 @media (max-width: 1000px) {
 
 	.main-container .footer-distributed .footer-right form input,
@@ -184,7 +158,6 @@ body {
 	}
 
 }
-
 @media (max-width: 880px) {
 
 	.main-container .footer-distributed{
@@ -226,4 +199,9 @@ body {
 	.main-container .footer-distributed .footer-right form button{
 		float: none;
 	}
+
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
