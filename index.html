@@ -1,14 +1,479 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link type="text/css" rel="stylesheet" href="css/main.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	</head>
-	<body>
-	</body>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!-- Custom templates -->
+	<link href="import/css/navbar.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+  <body>
+  	<div class="main-container">
+  		<!-- Header -->
+  		<div class="headNav">
+  			<div class="headLang">
+  					<!-- Header -->
+  					<div id="lang">
+  						<img src="img/france.png" alt="Francais">
+  						<img src="img/UK.png" alt="English">
+  					</div>
+  					<div class="brand">
+  						<a href="http://www.auxitec.arteliagroup.com/accueil/"></a>
+  						<img src="http://www.auxitec-ingenierie.com/wp-content/uploads/2017/11/logo-auxitec-artelia.png" alt="Auxitec Ingénierie" id="logoCompany">
+  					</div>
+  			</div>
+  			<!-- /Langues -->
+  			<!-- </header> -->
+  			<!-- Navigation -->
+  			<div class="row justify-content-center">
+  				<nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+  					<div class="container">
+  						<div class="collapse navbar-collapse" id="navbarResponsive">
+  							<ul class="navbar-nav mx-auto">
+  								<li class="nav-item active px-lg-1">
+  									<a class="nav-link text-uppercase text-expanded" href="index.html">Accueil
+  										<span class="sr-only">(current)</span>
+  									</a>
+  								</li>
+  								<li class="nav-item px-lg-1">
+  									<a class="nav-link text-uppercase text-expanded" href="#">Profil</a>
+  								</li>
+  								<li class="nav-item px-lg-1">
+  									<a id="dropdownMenuButton" class="nav-link text-uppercase text-expanded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Expertises</a>
+  									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  										<a class="dropdown-item" href="#">Bâtiment et génie civil</a>
+  										<div class="dropdown-divider"></div>
+  										<a class="dropdown-item" href="#">Industrie</a>
+  										<div class="dropdown-divider"></div>
+  										<a class="dropdown-item" href="#">Services du numérique</a>
+  									</div>
+  								</li>
+  								<li class="nav-item px-lg-1">
+  									<a class="nav-link text-uppercase text-expanded" href="#">Gouvernance</a>
+  								</li>
+  								<li class="nav-item px-lg-1">
+  									<a class="nav-link text-uppercase text-expanded" href="s#">Carrières</a>
+  								</li>
+  								<li class="nav-item px-lg-1">
+  									<a class="nav-link text-uppercase text-expanded" href="#">Développement responsable</a>
+  								</li>
+  								<li class="nav-item px-lg-1">
+  									<a class="nav-link text-uppercase text-expanded" href="#">Implantations</a>
+  								</li>
+  								<li class="nav-item px-lg-1">
+  									<a class="nav-link text-uppercase text-expanded" href="#">Téléchargements</a>
+  								</li>
+  								<li class="nav-item px-lg-1">
+  									<a class="nav-link text-uppercase text-expanded" href="#">Contacts</a>
+  								</li>
+  							</ul>
+  						</div>
+  					</div>
+  				</nav>
+  			</div>
+  		</div>
+  		<!-- CONTENT -->
+      <!--Début du carousel-->
+  		<div class="row mx-auto">
+    		<div id="carouselExampleControls" class="carousel slide carousel-fade mx-auto" data-ride="carousel" data-interval="5000">
+    			<div class="carousel-inner">
+    				<div class="carousel-item active">
+    					<img class="d-block w-100" src="img/slide-0006.jpg" alt="First slide">
+    					<img class="d-block flecheverte animated fadeInDown" src="img/slide-forme-001.png" alt="fleche verte">
+    					<img class="d-block w-20 flecheblanche animated fadeInDown" src="img/slide-forme-03.png" alt="fleche blanche">
+    					<h3 class="animated fadeInUp" id="titrecarousel1">INGENIERIE PLURIDISCIPLINAIRE</h3>
+    				</div>
+    				<div class="carousel-item">
+    					<img class="d-block w-100" src="img/slide-0005.jpg" alt="Second slide">
+    					<img class="d-block flecheverte animated fadeInDown" src="img/slide-forme-001.png" alt="fleche verte">
+    					<img class="d-block w-20 flecheblanche animated fadeInDown" src="img/slide-forme-03.png" alt="fleche blanche">
+    					<h3 class="animated fadeInUp" id="titrecarousel2">CONCEPTION & MANAGEMENT DE PROJETS</h3>
+    				</div>
+    				<div class="carousel-item">
+    					<img class="d-block w-100" src="img/slide-0004.jpg" alt="Third slide">
+    					<img class="d-block flecheverte animated fadeInDown" src="img/slide-forme-001.png" alt="fleche verte">
+    					<img class="d-block w-20 flecheblanche animated fadeInDown" src="img/slide-forme-03.png" alt="fleche blanche">
+    					<h3 class="animated fadeInUp" id="titrecarousel2">MAÎTRISES D’ŒUVRES COMPLÈTES & CLEFS EN MAIN</h3>
+    				</div>
+    			</div>
+    			<a class="carousel-control-prev mx-0" href="#carouselExampleControls" role="button" data-slide="prev" id="boutonprev">
+    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Previous</span>
+    			</a>
+    			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" id="boutonnext">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+    			</a>
+    		</div>
+    			<div class="row justify-content-center row3cases mx-auto">
+    		<div class="col-xs-12 col-sm-12 col-md-3 carrevert animated fadeIn" id="premierecaseverte">
+    			<p class="text-center">
+    			<img class="imagecarrevert" src="img/picto-accueil-01xl.png" alt="usine" />
+    			</p>
+    			<h4 class="titrecarrevert text-center">BÂTIMENT & GÉNIE CIVIL</h4>
+    		</div>
+    		<div class="col-xs-12 col-sm-12 col-md-3 carrevert animated fadeIn" id="deuxiemecaseverte">
+    			<p class="text-center">
+    				<img class="imagecarrevert" src="img/picto-accueil-02xl.png" alt="usine" />
+    			</p>
+    			<h4 class="titrecarrevert text-center">INDUSTRIE</h4>
+    		</div>
+    		<div class="col-xs-12 col-sm-12 col-md-3 carrevert animated fadeIn" id="troisiemecaseverte">
+    			<p class="text-center">
+    				<img class="imagecarrevert" src="img/picto-accueil-03xl.png" alt="usine" />
+    			</p>
+    			<h4 class="titrecarrevert text-center">SERVICES DU NUMÉRIQUE</h4>
+    		</div>
+    	</div>
+    	</div>
+      <!--Fin du carousel-->
+      <!--Début Laura-->
+  		<div class="row">
+  			<div class="col-12 col-lg-8">
+  				<div class="titreH3">
+  					<h3 class="title">UNE INGÉNIERIE PERFORMANTE</h3>
+  				</div>
+  				<div class="row">
+  					<div class="col-12 col-lg-6">
+  						<a href="http://www.auxitec.arteliagroup.com/profil/"><img class="img-responsive" id="imgPerf" src="img/img-54.jpg" alt="img"></a>
+  						<p id="pPerf1">
+  							AUXITEC a rejoint le <a href="http://www.arteliagroup.com/">Groupe ARTELIA</a> en 2017, un groupe international multidisciplinaire de conseil, d’ingénierie et de management de projet dans les secteurs du bâtiment, de l’industrie, des infrastructures, de l’eau et de l’environnement.
+  						</p>
+  						<p id="pPerf2">
+  							Nos équipes pluridisciplinaires garantissent une expertise de haut niveau. Elles assurent la maîtrise d’oeuvre et la gestion globale des projets, depuis leur conception jusqu’à leur parfait achèvement.
+  						</p>
+  					</div>
+  					<div class="col-12 col-lg-6">
+  						<p id="pPerf3">
+  							Elles mettent en oeuvre des compétences pour des dossiers toujours plus complexes et partagent un objectif commun, la qualité du service. Vous accompagner à chaque étape du projet, apporter les solutions qui répondent à vos impératifs techniques et budgétaires, sécuritaires et environnementaux&nbsp;: telles sont nos ambitions.
+  						</p>
+  						<p>
+  							<a class="lireSuite" href="http://www.auxitec-ingenierie.com/profil/">Lire la suite</a>
+  						</p>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-12 col-lg-12">
+  						<div id="iframe" class="embed-responsive embed-responsive-16by9">
+  						  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nUJoIlX2fWg" allowfullscreen></iframe>
+  						</div>
+  						<div id="button">
+  							<a href="http://www.auxitec.arteliagroup.com/wp-content/uploads/2018/07/4volets-v3Web.pdf">
+  								<i class="fa fa-file-pdf-o"></i> Téléchargez notre plaquette
+  							</a>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  			<div id="BREF" class="col-12 col-lg-4">
+  				<div class="animation">
+  					<div class="titreH3">
+  						<h3 class="title-divider">En bref</h3>
+  					</div>
+  					<p class="item-1">
+  						<a href="http://www.auxitec.arteliagroup.com/nous-y-serons-petrochymia-2018-la-halle-de-martigues-1920-septembre/">Nous y étions ! Salon Petrochymia – Septembre 2018</a>
+  						<br>21 septembre 2018
+  					</p>
+  					<p class="item-2">
+  						<a href="http://www.auxitec.arteliagroup.com/inauguration-de-lusine-comhurex-ii-pierrelatte-10-septembre-2018/">Inauguration de l’Usine Comhurex II – Pierrelatte – 10 septembre 2018</a>
+  						<br>10 septembre 2018
+  					</p>
+  					<p class="item-3">
+  						<a href="http://www.auxitec.arteliagroup.com/projet-phoenix-energies-renouvelables-biocarburants-auxitec-groupe-artelia-est-mandate-par-le-groupe-total-pour-la-perennisation-et-la-transformation-du-site-industriel-de-la-mede/">Projet Phoenix – Energies renouvelables & biocarburants – AUXITEC (Groupe ARTELIA) est mandaté par le Groupe TOTAL pour la pérennisation et la transformation du site industriel de la Mède</a>
+  						<br>25 février 2018
+  					</p>
+  					<p class="item-4">
+  						<a href="http://www.auxitec.arteliagroup.com/auxitec-recrute-un-ingenieur-procedes/">Auxitec recrute un Ingénieur Procédés</a>
+  						<br>20 février 2018
+  					</p>
+  					<p class="item-5">
+  						<a href="http://www.auxitec.arteliagroup.com/lindustrie-un-secteur-davenir-par-benoit-clocheret-directeur-general-du-groupe-artelia/">L’industrie, un secteur d’avenir – par Benoît Clocheret, Directeur Général du groupe ARTELIA</a>
+  						<br>16 février 2018
+  					</p>
+  					<p class="item-6">
+  						<a href="http://www.auxitec.arteliagroup.com/lingenierie-du-nucleaire-recrute-dans-le-sud-de-la-france/">L’ingénierie du nucléaire recrute dans le sud de la France</a>
+  						<br>24 janvier 2018
+  					</p>
+  					<div id="buttonBREF">
+  						<a href="http://www.auxitec.arteliagroup.com/wp-content/uploads/2018/07/4volets-v3Web.pdf">
+  							Accédez à toutes les brèves
+  						</a>
+  					</div>
+  				</div>
+  				<div class="suivezNous">
+  					<hr>
+  					<h3 class="texteSuivezNous">Suivez-nous</h3>
+  					<a href="https://www.linkedin.com/company/artelia-group/">
+  						<img class="icon img-responsive" src="http://www.auxitec-ingenierie.com/wp-content/uploads/2017/11/picto-linkedin_2017.png" alt="">
+  					</a>
+  					<a href="https://twitter.com/arteliagroup">
+  						<img class="icon img-responsive" src="http://www.auxitec-ingenierie.com/wp-content/uploads/2017/11/picto-twitter_2017.png" alt="">
+  					</a>
+  					<a href="https://www.youtube.com/user/arteliagroup">
+  						<img class="icon img-responsive" src="http://www.auxitec-ingenierie.com/wp-content/uploads/2017/11/picto-youtube_2017.png" alt="">
+  					</a>
+  					<hr>
+  				</div>
+  			</div>
+  		</div>
+  		<!--FIN Laura-->
+      <!-- FUNK -->
+      <div id="conteneur2">
+      	<div class="row">
+      		<div class="parallax mx-md-5 mx-sx-0 col-12 col-lg-12 row">
+      			<div id="divParallax" class="col-12 col-lg-6">
+      				<h4 class="col-5 blanc2">Un groupe solide</h4><br>
+      					<q> AUXITEC, une ingénierie créée en 1964 portée par une dynamique de croissance<br>maîtrisée mise au service de ses clients et de leur stratégie, a rejoint le groupe<br>ARTELIA en 2017.</q>
+      	</div>
+      	<div class="col-12 col-lg-3">
+      		<h3 class="blanc">900</h3>
+      		<p class="blanc">Effectif global</p>
+      	</div>
+      	<div class="col-12 col-lg-2">
+      		<h3 class="blanc">84 M€</h3>
+      		<p class="blanc">CA consolidé 2017</p>
+      	</div>
+
+
+      </div>
+      </div>
+      </div>
+
+
+
+      <div class="col-sx-12 slideshow-container mx-auto" id="mainContent">
+      	<div class="carriere">
+      		<h2 style="text-align: center;">
+      			CARRIÈRES
+      		</h2>
+      		<hr style="height: 2px; width: 32px; background-color: #00a2a9;"/>
+
+      		<div id=conteneur>
+      		<div id="button2">
+      		<a href="http://www.auxitec.arteliagroup.com/offres-demploi/" style="background-color:#00a2a9;color:#ffffff;">
+      			<i class="fa fa-list"></i> Consultez nos offres d'emploi
+      		</a>
+      		</div>
+      		</div>
+      	</div>
+      <div class="mySlides">
+        <p class="description">&laquo; En quelques années, j’ai pu diversifier mes compétences.<br>
+      Aujourd’hui, mon objectif est d’aller<br>
+      davantage vers la gestion de projets. &raquo;</p><br>
+      <img src="img\damien-barret-collet.jpg" class="rounded-circle" width="100" height="100"></img><br>
+      <p class="author"><strong>Damien</strong></p>
+      <p class="autorinfo">
+      Chef de Groupe, Installations Générales - Auxitec Industrie Lyon
+      </p>
+      </div>
+
+      <div class="mySlides">
+        <p class="description" id="des2">&laquo; Il faut garder l’esprit ouvert et intégrer très vite<br>
+      de nouveaux réflexes pour gagner en productivité<br>
+      et en pertinence, car notre cellule est dédiée<br>
+      à la résolution de problèmes. &raquo;</p><br>
+      <img src="img\marie-foutel.jpg" class="rounded-circle" width="100" height="100"></img><br>
+      <p class="author"><strong>Marie</strong></p>
+      <p class="autorinfo" id="aut2">
+      Ingénieure Développement, Responsable Intégration Solutions Applicatives - Auxitec Technologies Le Havre
+      </p>
+      </div>
+
+      <div class="mySlides">
+        <p class="description" id="des3">&laquo; Dans un bureau d’études,
+      la transmission des compétences<br>
+      aux nouveaux arrivants est importante… et bénéfique pour tous !<br>
+      Un regard neuf est toujours enrichissant. &raquo;</p><br>
+      <img src="img\patrick-tellier.jpg" class="rounded-circle" width="100" height="100"></img><br>
+      <p class="author"><strong>Patrick</strong></p>
+      <p class="autorinfo">
+      Responsable Bureau d’Etudes - Auxitec Industrie Le Havre
+      </p>
+      </div>
+
+      <div class="mySlides">
+        <p class="description">&laquo; La confiance et le respect des engagements<br>
+      sont des valeurs sûres<br> chez Auxitec &raquo;</p><br>
+      <img src="img\sophie-cardine.jpg" class="rounded-circle" width="100" height="100"></img><br>
+      <p class="author"><strong>Sophie</strong></p>
+      <p class="autorinfo">
+      Directrice Déléguée - Auxitec Bâtiment SAS
+      </p>
+      </div>
+
+      <div class="mySlides">
+        <p class="description">&laquo; Etre à l’écoute, innover, maîtriser et intégrer des technologies<br>
+      en constante évolution pour répondre aux besoins métiers<br>
+      de nos clients constitue un challenge quotidien et surtout<br>
+      une expérience très enrichissante. &raquo;</p><br>
+      <img src="img\Julien.jpg" class="rounded-circle" width="100" height="100"></img><br>
+      <p class="author"><strong>Julien</strong></p>
+      <p class="autorinfo">
+      Ingénieur Projets Infrastructures des Systèmes d’Information - Auxitec Technologies Le Havre
+      </p>
+      </div>
+
+      <div class="mySlides">
+        <p class="description">&laquo; Travailler sur des grands projets d’ingénierie en tout corps d’état, appliquer<br>
+      et développer sans cesse des compétences<br>
+      en management de projets : c’est ce qui me passionne dans mon métier. &raquo;</p><br>
+      <img src="img\Yann-Sauvan1.jpg" class="rounded-circle" width="100" height="100"></img><br>
+      <p class="author"><strong>Yann</strong></p>
+      <p class="autorinfo">
+      Chef de Projets, Responsable du Pôle Electricité Haute et Basse Tension - Auxitec Industrie Martigues
+      </p>
+      </div>
+
+      <div class="mySlides">
+        <p class="description">&laquo; Les métiers de l’ingénierie sont exigeants !<br>
+      Ils demandent une ouverture d’esprit,<br>
+      une adaptation permanente aux évolutions des besoins de nos clients,<br>
+      une implication locale forte et un soin constant de la qualité. C’est très stimulant !  &raquo;</p><br>
+      <img src="img\Christophe.jpg" class="rounded-circle" width="100" height="100"></img><br>
+      <p class="author"><strong>Christophe</strong></p>
+      <p class="autorinfo">
+      Responsable Bureau d'Etudes - Auxitec Industrie Brest
+      </p>
+      </div>
+
+      <div class="mySlides">
+        <p class="description">&laquo; Après avoir piloté la gestion de projets de déploiement multi-sites,<br>
+      j’ai participé à la création d’une structure de gestion de travaux de grande ampleur.<br>
+      Cette évolution me permet de mettre au service des grands projets<br>
+      des compétences organisationnelles très pointues. &raquo;</p><br>
+      <img src="img\Rouen.jpg" class="rounded-circle" width="100" height="100"></img><br>
+      <p class="author"><strong>Nicolas</strong></p>
+      <p class="autorinfo">
+      Chargé d’Affaires - Auxitec Bâtiment Rouen
+      </p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      	<span class="dot" onclick="currentSlide(4)"></span>
+      	<span class="dot" onclick="currentSlide(5)"></span>
+      	<span class="dot" onclick="currentSlide(6)"></span>
+      	<span class="dot" onclick="currentSlide(7)"></span>
+      	<span class="dot" onclick="currentSlide(8)"></span>
+      </div>
+
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+  		<!-- /CONTENT -->
+  		<!-- FOOTER -->
+  		<div class="footer-distributed">
+  			<div class="footer-left">
+  				<img src="http://www.auxitec-ingenierie.com/wp-content/uploads/2017/11/logo-auxitec-artelia-footer.png" alt="Auxitec groupe Artelia" id="logoFooter">
+  				<p>Une offre complète et structurée pour la conception et le management global de projets... <a href="?p=73">Lire la suite</a>
+  				</p>
+  				<div class="txtWidget">
+  					<p><i class="chevron fas fa-chevron-right">
+  					</i>Développement sectoriel & géographique</p>
+  					<p><i class="chevron fas fa-chevron-right"></i>Ecoute & Réactivité</p>
+  					<p><i class="chevron fas fa-chevron-right"></i>Pertinence & Innovation</p>
+  				</div>
+  				<div id="globe">
+  					<i class="fas fa-globe"></i>
+  					<a href="http://www.arteliagroup.com">www.arteliagroup.com</a>
+  				</div>
+  			</div>
+
+  			<div class="footer-center">
+
+  				<div>
+  					<h3>nos coordonnées</h3>
+  					<p><strong>Siège social</strong></p>
+  					<p>171 boulevard Amiral Mouchez</p>
+  					<p>CS 30866</p>
+  					<p>76086 Le Havre cedex</p>
+  					<p>France</p>
+  				</div>
+
+  				<div>
+  					<p><i class="fas fa-phone"></i>+33 (0)2 35 53 72 72</p>
+  					<p><i class="fas fa-fax"></i>+33 (0)2 35 53 72 99</p>
+  				</div>
+
+  				<div>
+  					<p><i class="fas fa-envelope"></i><a href="mailto:contact.ingenierie@auxitec.arteliagroup.com">contact.ingenierie@auxitec.arteliagroup.com</a></p>
+  				</div>
+
+  				<div>
+  					<p><i class="fas fa-globe"></i><a href="?p=1368">Toutes nos implantations</a></p>
+  				</div>
+
+  			</div>
+
+  			<div class="footer-right">
+
+  				<h3>UN MESSAGE ?</h3>
+
+  				<form action="#" method="post">
+
+  					<input type="text" name="nomPrenom" placeholder="Nom/Prénom" />
+  					<input type="text" name="email" placeholder="Email" />
+  					<textarea name="message" placeholder="Message"></textarea>
+  					<button>Envoyer</button>
+
+  				</form>
+
+  			</div>
+  		</div>
+
+  		<div class="footer-fix">
+  			<div class="wrapper">
+  				<div class="social-links">
+  					<a href="https://www.linkedin.com/company/auxitec-technologies" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://twitter.com/arteliagroup" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://www.youtube.com/user/arteliagroup" target="_blank"><i class="fab fa-youtube-square"></i></a>
+  				</div>
+  				<div class="copyright">
+  					<div class="copyright-content">
+  						Copyright &copy; 2018 Auxitec. <a href="?p=1695">Mentions légales et compatibilité avec les navigateurs web</a><a href="http://www.opteam-interactive.com/"><img class="alignnone" alt="opteam" src="http://www.auxitec-ingenierie.com/wp-content/uploads/2015/09/opteam.png"></a>
+  					</div>
+  					<!-- /.copyright-content -->
+  				</div>
+  				<!-- /.copyright -->
+  			</div>
+  			<!-- /.wrapper -->
+  		</div>
+  		<!-- /.footer-fix -->
+  	</div>
+  	<!-- /.container -->
+  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
