@@ -290,6 +290,9 @@ body{
   width: 13rem;
   margin: 2rem;
 }
+
+/* PARALLAX */
+
 .parallax {
     /* The image used */
     background-image: url("assets/parallax-02.jpg");
@@ -301,7 +304,7 @@ body{
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 q{
@@ -325,6 +328,87 @@ q{
   text-align: center;
   padding-top: 1em;
 }
+@media screen and (min-width: 280px) and (max-width: 310px){
+  .sp-page-builder .page-content #noparallax {
+    background-attachment: unset !important;
+    background-position: center top !important;
+  }
+  #divParallax, #divParallax h4{
+    text-align: center !important;
+  }
+  #mainContent{
+    top: 390px;
+  }
+  .description, .autorinfo{
+    font-size: 1rem;
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (min-width: 308px) and (max-width: 310px){
+  .sp-page-builder .page-content #noparallax {
+    background-attachment: unset !important;
+    background-position: center top !important;
+  }
+  #divParallax, #divParallax h4{
+    text-align: center !important;
+  }
+  #mainContent{
+    top: 368px;
+  }
+  .description, .autorinfo{
+    font-size: 1rem;
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (min-width: 310px) and (max-width: 532px){
+  .sp-page-builder .page-content #noparallax {
+    background-attachment: unset !important;
+    background-position: center top !important;
+  }
+  #divParallax, #divParallax h4{
+    text-align: center !important;
+  }
+  #mainContent{
+    top: 368px;
+  }
+  .description, .autorinfo{
+    font-size: 1rem;
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (min-width: 532px) and (max-width: 572px){
+  .sp-page-builder .page-content #noparallax {
+    background-attachment: unset !important;
+    background-position: center top !important;
+  }
+  #divParallax, #divParallax h4{
+    text-align: center !important;
+  }
+  #mainContent{
+    top: 287px;
+  }
+  .description, .autorinfo{
+    font-size: 1rem;
+    margin: 0 0 0 0;
+  }
+}
+@media screen and (min-width: 572px) and (max-width: 1024px){
+  .sp-page-builder .page-content #noparallax {
+    background-attachment: unset !important;
+    background-position: center top !important;
+  }
+  #divParallax, #divParallax h4{
+    text-align: center !important;
+  }
+  #mainContent{
+    top: 290px;
+  }
+  .description, .autorinfo{
+    font-size: 1rem;
+    margin: 0 0 0 0;
+  }
+}
+
 /* Carrousel */
 .author {color: #888; text-align: center; font-family: 'Roboto Slab'}
 .active, .dot:hover {
@@ -346,7 +430,7 @@ q{
     background: #ddd;
 }
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #ffffff;
   color: white;
 }
 .next {
