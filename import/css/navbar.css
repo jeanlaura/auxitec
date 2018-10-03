@@ -1,4 +1,4 @@
-h1,
+hh1,
 h2,
 h3,
 h4,
@@ -31,20 +31,20 @@ h6 {
 
 .main-container .headNav .headLang .brand {
   text-align: center;
-  background-image: url(http://www.auxitec.arteliagroup.com/wp-content/themes/konstruct/img/img/accroche.png);
+  background-image: url(http://www.auxitec.arteliagroup.com/wp-content/themes/konstruct/assets/img/accroche.png);
   background-repeat: no-repeat;
   background-position: right center;
   margin-right: 90px;
   margin-left: 40px;
 }
 
-.main-container .navbar .container {
+#contaiNav {
+  padding: 0;
   max-width: 100%;
 }
 
 .container .collapse .navbar-nav {
   /* transition: all 0.2s ease-in-out 0s; -----> Pas effectif */
-  padding-left: 0;
 }
 
 .nav-item .dropdown-menu {
@@ -52,27 +52,13 @@ h6 {
   color: white;
 }
 
-.nav-item :hover>.dropdown-menu {
+.nav-item .dropdown-menu:hover>.dropdown-menu {
   display: block;
 }
 
 .site-heading {
-  padding-top: 3rem;
-  margin-bottom: 3rem;
   text-transform: uppercase;
   line-height: 1;
-}
-
-.site-heading .site-heading-upper {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.site-heading .site-heading-lower {
-  font-size: 14px;
-  font-weight: 100;
-  line-height: 4rem;
 }
 
 #mainNav {

@@ -7,21 +7,24 @@
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
 }
-
+section, footer, header, aside{
+	display: block;
+}
 body {
   background: url('http://www.auxitec-ingenierie.com/wp-content/uploads/2015/07/fond-page-4.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 5.1rem;
+  margin-right: 5.1rem;
+  font-family: Verdana, sans-serif;
+  overflow-x: hidden;
 }
-
 .main-container{
 	background-color: #FFFFFF;
+	position:relative;
 }
-
 .main-container .footer-distributed{
   border-top-color: #6EAA00;
   font: normal 14px 'Open Sans';
@@ -30,57 +33,48 @@ body {
 	width: 100%;
 	text-align: left;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
 	padding: 55px 50px;
 	padding-top: 80px;
 }
-
 .main-container .footer-distributed .footer-left,
 .main-container .footer-distributed .footer-center,
 .main-container .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
 }
-
 /* Footer left */
 .main-container .footer-distributed .footer-left{
 	width: 30%;
   color: #B8C7D1;
   padding-right: 1rem;
 }
-
 .main-container .footer-distributed .footer-left i{
   margin-right: 0.5rem;
   color: #00A2A9;
 }
-
 #globe i{
   color: #B8C7D1;
 }
-
 .main-container .footer-distributed a{
   color: #00a2a9;
   text-decoration: none;
 }
-
 /* Footer Center */
 .main-container .footer-distributed .footer-center{
 	width: 32%;
 }
-
 /* Titles Footer */
 .main-container .footer-distributed h3{
 	color:#ffffff;
 	margin-top: 0;
   text-transform: uppercase;
 }
-
 .main-container .footer-distributed .footer-center i{
 	color: #B8B9A8;
   margin-right: 0.5rem;
 }
-
 .main-container .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #B8C7D1;
@@ -88,19 +82,15 @@ body {
 	display:block;
 	line-height:2;
 }
-
-/* Footer Rigth */
+/* Footer Right */
 /* Contact form */
-
 #logoFooter {
   width:12rem;
   height:auto;
 }
-
 .main-container .footer-distributed form{
 	display: inline-block;
 }
-
 .main-container .footer-distributed form input,
 .main-container .footer-distributed form textarea{
 	display: block;
@@ -117,31 +107,25 @@ body {
 	width: 350px;
 	padding: 18px;
 }
-
 .main-container .footer-distributed .footer-right ::-webkit-input-placeholder {
 	color: #566869;
 }
-
 .main-container .footer-distributed .footer-right ::-moz-placeholder {
 	color:  #566869;
 	opacity: 1;
 }
-
 .main-container .footer-distributed .footer-right :-ms-input-placeholder{
 	color:  #566869;
 }
-
 .main-container .footer-distributed .footer-right form input{
 	height: 40px;
 	margin-bottom: 5px;
 }
-
 .main-container .footer-distributed .footer-right form textarea{
 	height: 100px;
 	margin-bottom: 5px;
   width: 350px;
 }
-
 .main-container .footer-distributed .footer-right form button{
 	border-radius: 3px;
 	background-color:  #00a2a9;
@@ -156,89 +140,24 @@ body {
 .main-container .footer-distributed .footer-right button:hover {
     background: #333333;
 }
-
-.main-container .footer-fix {
+footer .footer-fix{
     background: #002F4D;
     color: #B8C7D1;
     text-align: center;
     height: 150px;
     width: 100%;
-    /* position: fixed; */
 }
 
-#opteam {
-   margin-top:-5px;
-   margin-left:10px;
-   width:163;
-   height:33;
-}
 
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 1000px) {
-
-	.main-container .footer-distributed .footer-right form input,
-	.main-container .footer-distributed .footer-right form textarea {
-		width: 250px;
-	}
-
-	.main-container .footer-distributed .footer-right form button{
-
-	}
-
-}
-
-@media (max-width: 880px) {
-
-	.main-container .footer-distributed{
-		padding: 30px;
-	}
-
-	.main-container .footer-distributed .footer-left,
-	.main-container .footer-distributed .footer-right{
-		float: none;
-		max-width: 300px;
-		margin: 0 auto;
-	}
-
-  .main-container .footer-distributed .footer-left,
-  .main-container .footer-distributed .footer-center,
-  .main-container .footer-distributed .footer-right{
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-	.main-container .footer-distributed .footer-left{
-		margin-bottom: 40px;
-	}
-
-  .main-container .footer-distributed .footer-center i{
-    margin-left: 0;
-  }
-
-	.main-container .footer-distributed .footer-right form{
-		margin-top: 30px;
-	}
-
-	.main-container .footer-distributed .footer-right form{
-		display: block;
-	}
-
-	.main-container .footer-distributed .footer-right form button{
-		float: none;
-	}
-}
 /******************************************************************************/
 /*****************************FIN JEFFEN***************************************/
 /******************************************************************************/
+
 /******************************************************************************/
 /*****************************YASSINE******************************************/
 /******************************************************************************/
 /*Début Yassine*/
 /*début des styles du carousel */
-
 #boutonprev, #boutonnext {
   top: 50%;
   transform: translateY(-50%);
@@ -248,11 +167,9 @@ body {
   width:2%;
   transition: 0.3s;
 }
-
 #carouselExampleControls {
   margin-bottom: 5px;
 }
-
 #carouselExampleControls:hover #boutonprev {
   background-color:#212121;
   top: 50%;
@@ -261,7 +178,6 @@ body {
   display: flex;
   opacity: 0.7;
 }
-
 #carouselExampleControls:hover #boutonnext {
   background-color:#212121;
   top: 50%;
@@ -270,7 +186,6 @@ body {
   display: flex;
   opacity: 0.7;
 }
-
 .flecheverte {
   position: absolute;
   top: 15%;
@@ -279,7 +194,6 @@ body {
   animation-duration: 0.4s;
   animation-delay: 0s;
 }
-
 .flecheblanche {
   position: absolute;
   top: 25%;
@@ -288,7 +202,6 @@ body {
   animation-duration: 0.4s;
   animation-delay: 0.4s;
 }
-
 #titrecarousel1 {
   position: absolute;
   color: #FFF;
@@ -300,7 +213,6 @@ body {
   animation-delay: 0.8s;
   font-weight: lighter;
 }
-
 #titrecarousel2 {
   position: absolute;
   color: #FFF;
@@ -314,13 +226,10 @@ body {
   animation-duration: 0.4s;
   animation-delay: 0.8s;
 }
-
 #carouselExampleControls{
   background-color: #026eb6;
 }
-
 /*fin des styles css du carousel */
-
 /*début des styles des 3 boutons superposés au carousel*/
 .carrevert {
   background-color: #6eaa00;
@@ -331,43 +240,26 @@ body {
   position: relative;
   bottom: 50%;
 }
-
-@media (max-width: 1000px) {
-  .carrevert {
-    position:inherit;
-    margin-left: 0px;
-  }
-  #boutonprev, #boutonnext {
-    height:50%;
-    width:10%;
-  }
-}
-
 .imagecarrevert {
   height: 80px;
   width: 80px;
 }
-
 .titrecarrevert {
   font-size: 18px;
   font-weight: 400;
 }
-
 #premierecaseverte {
   animation-duration: 1s;
   animation-delay: 1.2s;
 }
-
 #deuxiemecaseverte {
   animation-duration: 1s;
   animation-delay: 1.6s;
 }
-
 #troisiemecaseverte {
   animation-duration: 1s;
   animation-delay: 2s;
 }
-
 /*Fin Yassine */
 /******************************************************************************/
 /*****************************FIN YASSINE**************************************/
@@ -376,21 +268,18 @@ body {
 /******************************************************************************/
 /*****************************LAURA********************************************/
 /******************************************************************************/
-body{
-  overflow-x: hidden;
-  margin: 2rem;
+#hrTitle1{
+  height: 2px;
+  width: 32px;
+  background-color: #00a2a9;
+  margin-left: 34px;
 }
-/******************************************************************************/
-/* .titreH3 .title-divider::after{
-  content: "";
-  left: 0;
-  position: absolute;
-  top: 2.5rem;
-  width: 1.875rem;
-  height: 0.125rem;
-  background: #00A2A9;
-  margin: 2rem;
-} */
+#hrTitle2{
+  height: 2px;
+  width: 32px;
+  background-color: #00a2a9;
+  margin-left: 0px;
+}
 .title{
   margin-left: 2rem;
 }
@@ -520,7 +409,7 @@ body{
   padding-bottom: 0.6875rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 12.25rem;
+  width: 12.8rem;
   margin: 2rem;
 }
 #button a{
@@ -570,70 +459,6 @@ body{
   height: 2.8125rem;
   margin-left: 0.625rem;
 }
-/********************MEDIA QUERIES*********************************************/
-@media screen and (min-width: 200px) and (max-width: 640px) {
-  .title{
-    margin: auto;
-  }
-  #imgPerf{
-    width: 80%;
-  }
-  #iframe {
-    width: 85%;
-  }
-  .titreH3, .animation p{
-    margin-left: 2rem;
-  }
-  /* #button{
-    margin: 2rem;
-  } */
-  #BREF .item-1, #BREF .item-2, #BREF .item-3, #BREF .item-4, #BREF .item-5, #BREF .item-6{
-    padding-left: 3.6rem;
-  }
-  #buttonBREF{
-    margin: 16rem 0 0 2rem;
-  }
-  .suivezNous{
-    margin: 2rem;
-  }
-  .texteSuivezNous{
-    margin-right: 0;
-  }
-  .suivezNous a img{
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
-@media screen and (min-width: 640px) and (max-width: 768px) {
-  .title{
-    margin: auto;
-  }
-  #iframe {
-    width: 90%;
-  }
-  .animation{
-    height: auto;
-  }
-  .titreH3{
-    margin: 2rem;
-  }
-  #BREF .item-1, #BREF .item-2, #BREF .item-3, #BREF .item-4, #BREF .item-5, #BREF .item-6{
-    padding-left: 4.7rem;
-  }
-  .suivezNous{
-    margin: 2rem;
-  }
-  .texteSuivezNous{
-    margin: 2rem;
-    margin-right: 0;
-  }
-  #buttonBREF{
-    margin: 8rem 0 0 2rem;
-  }
-  /* #button{
-    margin: 2rem;
-  } */
-}
 /******************************************************************************/
 /*****************************FIN LAURA****************************************/
 /******************************************************************************/
@@ -642,7 +467,6 @@ body{
 /*****************************ADRIEN*******************************************/
 /******************************************************************************/
 /* FUNK */
-
 .autorinfo {
   padding: 0 25px;
   margin: 30px 50px;
@@ -695,7 +519,7 @@ body{
     max-width:75em;
     min-height:15em;
     padding: 10px;
-    margin: 0 auto;
+    margin: 37px auto 0 auto;
 }
 #conteneur {
   margin-left: auto;
@@ -712,25 +536,25 @@ body{
   padding-bottom: 0.6875rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 13rem;
+  width: 14rem;
   margin: 2rem;
 }
-
 /* PARALLAX */
-
+#rowParallax{
+  width: 99.95%;
+}
 .parallax {
     /* The image used */
     background-image: url("img/parallax-02.jpg");
-
     /* Set a specific height */
     box-sizing: border-box;
     padding-bottom: 2em;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
+    margin-left: 0.95rem !important;
 }
 q{
   font-style: italic;
@@ -752,6 +576,203 @@ q{
   font-style: italic;
   text-align: center;
   padding-top: 1em;
+}
+/* Carrousel */
+.author {
+  color: #888;
+  text-align: center;
+  font-family: 'Roboto Slab';
+}
+.dot-container .active, .dot:hover {
+  background-color: #717171;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+.prev:hover, .next:hover {
+  background-color: #ffffff;
+  color: white;
+}
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+/******************************************************************************/
+/*****************************FIN ADRIEN***************************************/
+/******************************************************************************/
+
+/******************************************************************************/
+/*****************************MEDIA QUERIES************************************/
+/******************************************************************************/
+
+/* If you don't want the footer to be responsive, remove these media queries */
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 1000px) {
+
+	.main-container .footer-distributed .footer-right form input,
+	.main-container .footer-distributed .footer-right form textarea {
+		width: 250px;
+	}
+
+	.main-container .footer-distributed .footer-right form button{
+
+	}
+
+}
+@media (max-width: 880px) {
+
+	.main-container .footer-distributed{
+		padding: 30px;
+	}
+
+	.main-container .footer-distributed .footer-left,
+	.main-container .footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+  .main-container .footer-distributed .footer-left,
+  .main-container .footer-distributed .footer-center,
+  .main-container .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+	.main-container .footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+  .main-container .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+	.main-container .footer-distributed .footer-right form{
+		margin-top: 30px;
+	}
+
+	.main-container .footer-distributed .footer-right form{
+		display: block;
+	}
+
+	.main-container .footer-distributed .footer-right form button{
+		float: none;
+}
+@media (max-width: 1000px) {
+  .carrevert {
+    position:inherit;
+    margin-left: 0px;
+  }
+  #boutonprev, #boutonnext {
+    height:50%;
+    width:10%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .title{
+    margin: auto;
+  }
+  #hrTitle1{
+    margin: 0;
+  }
+  #imgPerf{
+    width: 80%;
+  }
+  #iframe {
+    width: 85%;
+  }
+  .titreH3, .animation p{
+    margin-left: 2rem;
+  }
+  /* #button{
+    margin: 2rem;
+  } */
+  #BREF .item-1, #BREF .item-2, #BREF .item-3, #BREF .item-4, #BREF .item-5, #BREF .item-6{
+    padding-left: 3.6rem;
+  }
+  #buttonBREF{
+    margin: 16rem 0 0 2rem;
+  }
+  .suivezNous{
+    margin: 2rem;
+  }
+  .texteSuivezNous{
+    margin-right: 0;
+  }
+  .suivezNous a img{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .title{
+    margin: auto;
+  }
+  #hrTitle1{
+    margin: 0;
+  }
+  #iframe {
+    width: 90%;
+  }
+  .animation{
+    height: auto;
+  }
+  .titreH3{
+    margin: 2rem;
+  }
+  #BREF .item-1, #BREF .item-2, #BREF .item-3, #BREF .item-4, #BREF .item-5, #BREF .item-6{
+    padding-left: 4.7rem;
+  }
+  .suivezNous{
+    margin: 2rem;
+  }
+  .texteSuivezNous{
+    margin: 2rem;
+    margin-right: 0;
+  }
+  #buttonBREF{
+    margin: 8rem 0 0 2rem;
+  }
+  /* #button{
+    margin: 2rem;
+  } */
 }
 @media screen and (min-width: 280px) and (max-width: 310px){
   .sp-page-builder .page-content #noparallax {
@@ -833,60 +854,17 @@ q{
     margin: 0 0 0 0;
   }
 }
-
-/* Carrousel */
-.author {color: #888; text-align: center; font-family: 'Roboto Slab'}
-.active, .dot:hover {
-  background-color: #717171;
+@media screen and (min-width: 200px) and (max-width: 1024px){
+  body{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #lang{
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  #logoCompany{
+    width: 60%;
+    height: 60%;
+  }
 }
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-}
-.prev:hover, .next:hover {
-  background-color: #ffffff;
-  color: white;
-}
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
-}
-.slideshow-container {
-  position: relative;
-  background: #f1f1f1f1;
-}
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-/******************************************************************************/
-/*****************************FIN ADRIEN***************************************/
-/******************************************************************************/
