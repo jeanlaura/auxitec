@@ -1,0 +1,59 @@
+body {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans';
+}
+
+.site-heading {
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.site-heading .site-heading-upper {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.site-heading .site-heading-lower {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 4rem;
+}
+
+#mainNav {
+  background-color: lightgrey;
+  font-family: 'Roboto';
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: black;
+  font-weight: 100;
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link {
+  color: #00a2a9;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #00a2a9;
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color: #00a2a9;
+  }
+}

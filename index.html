@@ -1,34 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="main.css" />
-	</head>
-	<body>
-		<!-- NAVBAR -->
-		<header>
-		</header>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!-- Custom templates -->
+	<link href="import/css/navbar.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="main.css" />
+</head>
+<body>
+	<div class="main-container">
+		<!-- Header -->
+		<div class="headNav">
+			<div class="headLang">
+				<div class="row justify-content-center">
+				<!-- Header -->
+				<ul id="lang">
+					<img src="img/flag_france.gif" alt="Francais">
+					<img src="img/flag_UK.gif" alt="English">
+				</ul>
+					<div class="brand">
+						<a href="http://www.auxitec.arteliagroup.com/accueil/"></a>
+						<img src="http://www.auxitec-ingenierie.com/wp-content/uploads/2017/11/logo-auxitec-artelia.png" alt="Auxitec Ingénierie" id="logoCompany">
+					</div>
+				</div>
+			</div>
+			<!-- /Langues -->
+			<!-- </header> -->
+			<!-- Navigation -->
+			<div class="row justify-content-center">
+				<nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+					<div class="container">
+						<div class="collapse navbar-collapse" id="navbarResponsive">
+							<ul class="navbar-nav mx-auto">
+								<li class="nav-item active px-lg-1">
+									<a class="nav-link text-uppercase text-expanded" href="index.html">Accueil
+										<span class="sr-only">(current)</span>
+									</a>
+								</li>
+								<li class="nav-item px-lg-1">
+									<a class="nav-link text-uppercase text-expanded" href="#">Profil</a>
+								</li>
+								<li class="nav-item px-lg-1">
+									<a id="dropdownMenuButton" class="nav-link text-uppercase text-expanded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Expertises</a>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Bâtiment et génie civil</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Industrie</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Services du numérique</a>
+									</div>
+								</li>
+								<li class="nav-item px-lg-1">
+									<a class="nav-link text-uppercase text-expanded" href="#">Gouvernance</a>
+								</li>
+								<li class="nav-item px-lg-1">
+									<a class="nav-link text-uppercase text-expanded" href="s#">Carrières</a>
+								</li>
+								<li class="nav-item px-lg-1">
+									<a class="nav-link text-uppercase text-expanded" href="#">Développement responsable</a>
+								</li>
+								<li class="nav-item px-lg-1">
+									<a class="nav-link text-uppercase text-expanded" href="store.html">Implantations</a>
+								</li>
+								<li class="nav-item px-lg-1">
+									<a class="nav-link text-uppercase text-expanded" href="store.html">Téléchargements</a>
+								</li>
+								<li class="nav-item px-lg-1">
+									<a class="nav-link text-uppercase text-expanded" href="store.html">Contacts</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- CONTENT -->
 
-		<!-- CONTACTS -->
-		<footer class="footer-distributed">
-
+		<!-- /CONTENT -->
+		<!-- FOOTER -->
+		<div class="footer-distributed">
 			<div class="footer-left">
-
-				<img src="http://www.auxitec-ingenierie.com/wp-content/uploads/2017/11/logo-auxitec-artelia-footer.png" style="width:12rem; height:auto;" alt="Auxitec groupe Artelia">
+				<img src="http://www.auxitec-ingenierie.com/wp-content/uploads/2017/11/logo-auxitec-artelia-footer.png" alt="Auxitec groupe Artelia" id="logoFooter">
 				<p>Une offre complète et structurée pour la conception et le management global de projets... <a href="?p=73">Lire la suite</a>
 				</p>
 				<div class="txtWidget">
-					<p><i class="chevron fa fa-chevron-right">
+					<p><i class="chevron fas fa-chevron-right">
 					</i>Développement sectoriel & géographique</p>
-					<p><i class="chevron fa fa-chevron-right"></i>Ecoute & Réactivité</p>
-					<p><i class="chevron fa fa-chevron-right"></i>Pertinence & Innovation</p>
+					<p><i class="chevron fas fa-chevron-right"></i>Ecoute & Réactivité</p>
+					<p><i class="chevron fas fa-chevron-right"></i>Pertinence & Innovation</p>
 				</div>
 				<div id="globe">
-					<i class="fa fa-globe"></i>
-						<a href="http://www.arteliagroup.com">www.arteliagroup.com</a>
+					<i class="fas fa-globe"></i>
+					<a href="http://www.arteliagroup.com">www.arteliagroup.com</a>
 				</div>
 			</div>
 
@@ -44,16 +110,16 @@
 				</div>
 
 				<div>
-					<p><i class="fa fa-phone"></i>+33 (0)2 35 53 72 72</p>
-					<p><i class="fa fa-fax"></i>+33 (0)2 35 53 72 99</p>
+					<p><i class="fas fa-phone"></i>+33 (0)2 35 53 72 72</p>
+					<p><i class="fas fa-fax"></i>+33 (0)2 35 53 72 99</p>
 				</div>
 
 				<div>
-					<p><i class="fa fa-envelope"></i><a href="mailto:contact.ingenierie@auxitec.arteliagroup.com">contact.ingenierie@auxitec.arteliagroup.com</a></p>
+					<p><i class="fas fa-envelope"></i><a href="mailto:contact.ingenierie@auxitec.arteliagroup.com">contact.ingenierie@auxitec.arteliagroup.com</a></p>
 				</div>
 
 				<div>
-					<p><i class="fa fa-globe"></i><a href="?p=1368">Toutes nos implantations</a></p>
+					<p><i class="fas fa-globe"></i><a href="?p=1368">Toutes nos implantations</a></p>
 				</div>
 
 			</div>
@@ -72,9 +138,28 @@
 				</form>
 
 			</div>
+		</div>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	</body>
+		<div class="footer-fix">
+			<div class="wrapper">
+				<div class="social-links">
+					<a href="https://www.linkedin.com/company/auxitec-technologies" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://twitter.com/arteliagroup" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://www.youtube.com/user/arteliagroup" target="_blank"><i class="fab fa-youtube-square"></i></a>
+				</div>
+				<div class="copyright">
+					<div class="copyright-content">
+						Copyright &copy; 2018 Auxitec. <a href="?p=1695">Mentions légales et compatibilité avec les navigateurs web</a><a href="http://www.opteam-interactive.com/"><img class="alignnone" alt="opteam" src="http://www.auxitec-ingenierie.com/wp-content/uploads/2015/09/opteam.png"></a>
+					</div>
+					<!-- /.copyright-content -->
+				</div>
+				<!-- /.copyright -->
+			</div>
+			<!-- /.wrapper -->
+		</div>
+		<!-- /.footer-fix -->
+	</div>
+	<!-- /.container -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>

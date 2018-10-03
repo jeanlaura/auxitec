@@ -5,64 +5,80 @@
     text-rendering: optimizeLegibility;
 }
 
-.footer-distributed{
+body {
+  background: url('http://www.auxitec-ingenierie.com/wp-content/uploads/2015/07/fond-page-4.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.main-container{
+	background-color: #FFFFFF;
+}
+
+.main-container .footer-distributed{
+  border-top-color: #6EAA00;
   font: normal 14px 'Open Sans';
   font-weight: 400;
 	background-color: #00375A;
 	width: 100%;
 	text-align: left;
+  position: relative;
+  z-index: 1;
 
 	padding: 55px 50px;
-	margin-top: 80px;
+	padding-top: 80px;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
+.main-container .footer-distributed .footer-left,
+.main-container .footer-distributed .footer-center,
+.main-container .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
 }
 
 /* Footer left */
-.footer-distributed .footer-left{
+.main-container .footer-distributed .footer-left{
 	width: 30%;
   color: #B8C7D1;
   padding-right: 1rem;
 }
 
-.footer-distributed .footer-left i{
+.main-container .footer-distributed .footer-left i{
   margin-right: 0.5rem;
   color: #00A2A9;
-
 }
 
 #globe i{
   color: #B8C7D1;
 }
 
-.footer-distributed a{
+.main-container .footer-distributed a{
   color: #00a2a9;
   text-decoration: none;
 }
 
 /* Footer Center */
-.footer-distributed .footer-center{
+.main-container .footer-distributed .footer-center{
 	width: 32%;
 }
 
-/* Title */
-.footer-distributed h3{
+/* Titles Footer */
+.main-container .footer-distributed h3{
 	color:#ffffff;
 	margin-top: 0;
   text-transform: uppercase;
 }
 
-.footer-distributed .footer-center i{
+.main-container .footer-distributed .footer-center i{
 	color: #B8B9A8;
   margin-right: 0.5rem;
 }
 
-.footer-distributed .footer-center p{
+.main-container .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #B8C7D1;
 	margin:0;
@@ -73,12 +89,17 @@
 /* Footer Rigth */
 /* Contact form */
 
-.footer-distributed form{
+#logoFooter {
+  width:12rem;
+  height:auto;
+}
+
+.main-container .footer-distributed form{
 	display: inline-block;
 }
 
-.footer-distributed form input,
-.footer-distributed form textarea{
+.main-container .footer-distributed form input,
+.main-container .footer-distributed form textarea{
 	display: block;
 	border-radius: 3px;
 	box-sizing: border-box;
@@ -89,37 +110,36 @@
 	font: inherit;
 	font-size: 14px;
 	font-weight: normal;
-	color: #B8C7D1;
 
 	width: 350px;
 	padding: 18px;
 }
 
-.footer-distributed .footer-right ::-webkit-input-placeholder {
-	color:  #B8C7D1;
+.main-container .footer-distributed .footer-right ::-webkit-input-placeholder {
+	color: #566869;
 }
 
-.footer-distributed .footer-right ::-moz-placeholder {
-	color:  #B8C7D1;
+.main-container .footer-distributed .footer-right ::-moz-placeholder {
+	color:  #566869;
 	opacity: 1;
 }
 
-.footer-distributed .footer-right :-ms-input-placeholder{
-	color:  #B8C7D1;
+.main-container .footer-distributed .footer-right :-ms-input-placeholder{
+	color:  #566869;
 }
 
-.footer-distributed .footer-right form input{
+.main-container .footer-distributed .footer-right form input{
 	height: 40px;
 	margin-bottom: 5px;
 }
 
-.footer-distributed .footer-right form textarea{
+.main-container .footer-distributed .footer-right form textarea{
 	height: 100px;
 	margin-bottom: 5px;
-  min-width: 260px;
+  width: 350px;
 }
 
-.footer-distributed .footer-right form button{
+.main-container .footer-distributed .footer-right form button{
 	border-radius: 3px;
 	background-color:  #00a2a9;
 	color: #ffffff;
@@ -130,64 +150,80 @@
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
 	float: left;
 }
-.footer-distributed .footer-right button:hover {
+.main-container .footer-distributed .footer-right button:hover {
     background: #333333;
+}
+
+.main-container .footer-fix {
+    background: #002F4D;
+    color: #B8C7D1;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    /* position: fixed; */
+}
+
+#opteam {
+   margin-top:-5px;
+   margin-left:10px;
+   width:163;
+   height:33;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 1000px) {
 
-	.footer-distributed .footer-right form input,
-	.footer-distributed .footer-right form textarea{
+	.main-container .footer-distributed .footer-right form input,
+	.main-container .footer-distributed .footer-right form textarea {
 		width: 250px;
 	}
 
-	.footer-distributed .footer-right form button{
-		padding: 10px 35px;
+	.main-container .footer-distributed .footer-right form button{
+
 	}
 
 }
 
 @media (max-width: 880px) {
 
-	.footer-distributed{
+	.main-container .footer-distributed{
 		padding: 30px;
 	}
 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
+	.main-container .footer-distributed .footer-left,
+	.main-container .footer-distributed .footer-right{
 		float: none;
 		max-width: 300px;
 		margin: 0 auto;
 	}
 
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
+  .main-container .footer-distributed .footer-left,
+  .main-container .footer-distributed .footer-center,
+  .main-container .footer-distributed .footer-right{
     display: block;
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
   }
 
-	.footer-distributed .footer-left{
+	.main-container .footer-distributed .footer-left{
 		margin-bottom: 40px;
 	}
 
-  .footer-distributed .footer-center i{
+  .main-container .footer-distributed .footer-center i{
     margin-left: 0;
   }
 
-	.footer-distributed .footer-right form{
+	.main-container .footer-distributed .footer-right form{
 		margin-top: 30px;
 	}
 
-	.footer-distributed .footer-right form{
+	.main-container .footer-distributed .footer-right form{
 		display: block;
 	}
 
-	.footer-distributed .footer-right form button{
+	.main-container .footer-distributed .footer-right form button{
 		float: none;
 	}
 }
